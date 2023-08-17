@@ -26,6 +26,7 @@ def init():
 def main():
     init()
 
+    os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
     chat = ChatOpenAI(temperature=0.5)
 
     # initialize message history
