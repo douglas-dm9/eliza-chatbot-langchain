@@ -7,3 +7,5 @@ pip install -r requirements.txt
 To launch the application on the CLI:
 
 _streamlit run main.py_
+
+Link deploy streamlit: https://eliza-chatbot-langchain-zkajtynjde3azje6jrslwe.streamlit.app/
