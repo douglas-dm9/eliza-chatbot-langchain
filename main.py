@@ -2,7 +2,6 @@
 # pip install streamlit streamlit-chat langchain python-dotenv
 import streamlit as st
 from streamlit_chat import message
-from dotenv import load_dotenv
 import os
 
 from langchain.chat_models import ChatOpenAI
@@ -15,15 +14,7 @@ from langchain.schema import (
 
 def init():
     # Load the OpenAsI API key from the environment variable
-    load_dotenv()
-    
-    # test that the API key exists
-    if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
-        #print("OPENAI_API_KEY is not set")
-        exit(1)
-    else:
-        #print("OPENAI_API_KEY is set")
-        pass
+    os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
     # setup streamlit page
     st.set_page_config(
