@@ -1,8 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-langchain=0.0.173=pypi_0
-openai=0.27.8=pypi_0
-openapi-schema-pydantic=1.2.4=pypi_0
-streamlit=1.25.0=pypi_0
-streamlit-chat=0.1.1=pypi_0
+langchain=0.0.173
+openai=0.27.8
+streamlit=1.25.0
+streamlit-chat=0.1.1
