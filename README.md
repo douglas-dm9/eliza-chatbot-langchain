@@ -1,4 +1,4 @@
-#### Creation a ELIZA ChatGPT clone with a GUI using  Python and LangChain.
+#### Creation of an ELIZA ChatGPT clone with a GUI using  Python and LangChain.
 
 **Prerequisites:**
 
