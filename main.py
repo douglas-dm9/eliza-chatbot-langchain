@@ -11,14 +11,11 @@ from langchain.schema import (
     AIMessage
 )
 
-st.write(
-    "Has environment variables been set:",
-     os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
-)
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 def init():
     # Load the OpenAsI API key from the environment variable
-
+    os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
     # setup streamlit page
     st.set_page_config(
         page_title="ELIZA - Terapeuta Virtual",
@@ -30,7 +27,7 @@ def main():
     init()
     
     chat = ChatOpenAI(temperature=0.5)
-
+    os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
     # initialize message history
     if "messages" not in st.session_state:
         st.session_state.messages = [
